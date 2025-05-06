@@ -1,0 +1,251 @@
+:root{
+    --background-color: #000000;
+    --primary-color: #ffffff;
+    --subtitle-color: #e85299;
+
+    /*HIGHLIGHT*/
+    --highlight-color: #ffffff;
+    --highlight-font-color: #722084;
+
+    /*GRADIENT*/
+    --gradient-top: #3e7acd;
+    --gradient-mid-top: #dfabf6;
+    --gradient-mid-bottom: #f1f1f3;
+    --gradient-bottom: #b873de;
+
+    /*LAYERED TEXTS*/
+    --layer-mid: #fab6db;
+    --layer-front: white;
+
+    /*-----MESSAGES-----*/
+    --error-color: #ED4337;
+    --correct-color: #27ff01;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+::selection {
+    background-color: var(--highlight-color);
+    color: var(--highlight-font-color);
+}
+
+.title {
+    font-family: 'TacticSans';
+}
+
+body {
+    font-family: 'TacticRound';
+}
+
+.header-logo {
+    font-size: 2rem;
+}
+
+.main-title {
+    font-size: 8rem;
+    margin-bottom: 0;
+}
+
+.main-subtitle {
+    color: var(--subtitle-color);
+    font-size: 4rem;
+    line-height: 0.1;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.section-title {
+    background-image: url('img/section-bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--subtitle-color);
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  
+    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+  }
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .tec-logo {
+    transition: transform 0.3s ease;
+  }
+
+  .tec-logo:hover {
+    transform: scale(1.2);
+  }
+
+  /*-----FORM STYLES-----*/
+  .correct-message {
+      color: var(--correct-color);
+  }
+  .error-message {
+      color: var(--error-color);
+  }
+
+  textarea {
+      resize: none;
+  }
+
+  input.form-control::placeholder,
+  textarea.form-control::placeholder {
+    color: #7e7e7e;
+    opacity: 1;
+  }
+
+  .white-icon {
+    filter: brightness(0) invert(1);
+  }
+  
+  
+  /*-----PROJECTS-----*/
+  .card-img-top {
+    object-fit:scale-down;
+    height: 200px;
+  }
+  
+  .card-footer img {
+    transition: transform 0.3s ease;
+  }
+  .card-footer img:hover {
+    transform: scale(1.2);
+  }
+  
+
+/*-----GRADIENT-----*/
+/*.gradient-text {
+    background: -webkit-linear-gradient(
+        270.8deg,
+        #3e7acd 20%,
+        #dfabf6 30%,
+        #f1f1f3 45%,
+        #b873de 57%
+    );
+    background-size: 1000px 100%;
+    background-repeat: no-repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}*/
+
+.gradient-text {
+    background: -webkit-linear-gradient(
+        270.8deg,
+        var(--gradient-top) 20%,
+        var(--gradient-mid-top) 40%,
+        var(--gradient-mid-bottom) 55%,
+        var(--gradient-bottom) 70%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*-----LAYERED TEXT EFFECT-----*/
+.layered-text {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-back {
+    position: relative;
+    z-index: 1;
+  }
+
+  .text-mid {
+    position: absolute;
+    top: -0.018em;
+    left: 0px;
+    color: transparent;
+    z-index: 2;
+    -webkit-text-stroke: 0.008em var(--layer-mid);
+    transform: scaleX(1.02);
+  }
+  
+  .text-front {
+    position: absolute;
+    top: -0.08em;
+    left: 0px;
+    color: transparent;
+    z-index: 2;
+    -webkit-text-stroke: 0.008em var(--layer-front);
+    transform: scaleX(1.05);
+  }
+  
+/*-----FONTS-----*/
+@font-face {
+    font-family: 'TTLakesNeue';
+    src:    url('fonts/TTLakesNeue.woff2') format('woff2'),
+            url('fonts/TTLakesNeue.woff') format('woff'),
+            url('fonts/TTLakesNeue.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TacticSans';
+    src:    url('fonts/TacticSans.woff2') format('woff2'),
+            url('fonts/TacticSans.woff') format('woff'),
+            url('fonts/TacticSans.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TacticRound';
+    src:    url('fonts/TacticRound.woff2') format('woff2'),
+            url('fonts/TacticRound.woff') format('woff'),
+            url('fonts/TacticRound.eot') format('eot'),
+            url('fonts/TacticRound.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*-----RESPONSIVNESS BREAKPOINTS*/
+@media (max-width: 2000px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1400px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 5px;
+    }
+}
