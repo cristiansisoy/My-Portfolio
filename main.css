@@ -85,7 +85,7 @@ body {
     margin-bottom: 2rem;
   
     clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
-  }
+}
 
 .section-title::before {
     content: "";
@@ -93,52 +93,53 @@ body {
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
-  }
+}
 
 /*-----LOGOS-----*/
-  .tec-logo {
+.tec-logo {
     transition: transform 0.3s ease;
-  }
+}
 
-  .tec-logo:hover {
+.tec-logo:hover {
     transform: scale(1.2);
-  }
+}
 
-  .white-icon {
+.white-icon {
     filter: brightness(0) invert(1);
-  }
+}
 
   /*-----FORM STYLES-----*/
-  .correct-message {
-      color: var(--correct-color);
-  }
-  .error-message {
-      color: var(--error-color);
-  }
+.correct-message {
+    color: var(--correct-color);
+}
 
-  textarea {
-      resize: none;
-  }
+.error-message {
+    color: var(--error-color);
+}
 
-  input.form-control::placeholder,
-  textarea.form-control::placeholder {
+textarea {
+    resize: none;
+}
+
+input.form-control::placeholder,
+textarea.form-control::placeholder {
     color: #7e7e7e;
     opacity: 1;
-  }
+}
   
   
   /*-----PROJECTS-----*/
-  .card-img-top {
+.card-img-top {
     object-fit:scale-down;
     height: 200px;
-  }
+}
   
-  .card-footer img {
+.card-footer img {
     transition: transform 0.3s ease;
-  }
-  .card-footer img:hover {
+}
+.card-footer img:hover {
     transform: scale(1.2);
-  }
+}
   
 
 /*-----GRADIENT-----*/
@@ -236,53 +237,58 @@ body {
 
 /*-----RESPONSIVNESS BREAKPOINTS*/
 html {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 @media (max-width: 1400px) {
-  html {
-    font-size: 17px;
-  }
+    html {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 990px) {
-  html {
-    font-size: 16px;
-  }
-  
-  .main-title {
-    font-size: 6rem;
-  }
+    html {
+        font-size: 16px;
+    }
+    
+    .main-title {
+        font-size: 6rem;
+    }
 
-  .main-subtitle {
-    font-size: 3rem;
-  }
+    .main-subtitle {
+        font-size: 3rem;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: left;
+    }
+
 }
 
 @media (max-width: 700px) {
-  html {
-    font-size: 15px;
-  }
+    html {
+        font-size: 15px;
+    }
 
-  .main-title {
-    font-size: 4.5rem;
-  }
+    .main-title {
+        font-size: 4.5rem;
+    }
 
-  .main-subtitle {
-    font-size: 2rem;
-  }
+    .main-subtitle {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 500px) {
-  html {
-    font-size: 14px;
-  }
+    html {
+        font-size: 14px;
+    }
 
-  .main-title {
-    font-size: 3rem;
-  }
+    .main-title {
+        font-size: 3rem;
+    }
 
-  .main-subtitle {
-    font-size: 1.5rem;
-  }
+    .main-subtitle {
+        font-size: 1.5rem;
+    }
 }
