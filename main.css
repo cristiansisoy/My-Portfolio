@@ -44,6 +44,11 @@ body {
     font-size: 2rem;
 }
 
+.navbar-brand {
+    margin: 0;
+}
+
+/*-----TITLE SCREEN-----*/
 .main-title {
     font-size: 8rem;
     margin-bottom: 0;
@@ -55,10 +60,7 @@ body {
     line-height: 0.1;
 }
 
-.navbar-brand {
-    margin: 0;
-}
-
+/*-----SECTION TITLES-----*/
 .section-title {
     background-image: url('img/section-bg2.jpg');
     background-size: cover;
@@ -81,12 +83,17 @@ body {
     z-index: 0;
   }
 
+/*-----LOGOS-----*/
   .tec-logo {
     transition: transform 0.3s ease;
   }
 
   .tec-logo:hover {
     transform: scale(1.2);
+  }
+
+  .white-icon {
+    filter: brightness(0) invert(1);
   }
 
   /*-----FORM STYLES-----*/
@@ -105,10 +112,6 @@ body {
   textarea.form-control::placeholder {
     color: #7e7e7e;
     opacity: 1;
-  }
-
-  .white-icon {
-    filter: brightness(0) invert(1);
   }
   
   
@@ -235,6 +238,14 @@ html {
   html {
     font-size: 16px;
   }
+  
+  .main-title {
+    font-size: 6rem;
+  }
+
+  .main-subtitle {
+    font-size: 3rem;
+  }
 }
 
 /* Small tablets and large phones */
@@ -242,11 +253,27 @@ html {
   html {
     font-size: 15px;
   }
+
+  .main-title {
+    font-size: 4.5rem;
+  }
+
+  .main-subtitle {
+    font-size: 2rem;
+  }
 }
 
 /* Small phones */
 @media (max-width: 500px) {
   html {
     font-size: 14px;
+  }
+
+  .main-title {
+    font-size: 3rem;
+  }
+
+  .main-subtitle {
+    font-size: 1.5rem;
   }
 }
