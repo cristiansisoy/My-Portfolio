@@ -32,14 +32,11 @@ body {
     color: var(--highlight-font-color);
 }
 
-.title {
-    font-family: 'TacticSans';
-}
-
 body {
     font-family: 'TacticRound';
 }
 
+/*-----HEADER-----*/
 .header-logo {
     font-size: 2rem;
 }
@@ -48,7 +45,22 @@ body {
     margin: 0;
 }
 
+.navbar-nav .nav-item {
+  width: 120px;
+  text-align: center;
+}
+
+.container .navbar-toggler {
+    position: absolute;
+    right: 2%;
+    top: 17px;
+}
+
 /*-----TITLE SCREEN-----*/
+.title {
+    font-family: 'TacticSans';
+}
+
 .main-title {
     font-size: 8rem;
     margin-bottom: 0;
@@ -227,14 +239,13 @@ html {
   font-size: 18px;
 }
 
-/* Medium screens (desktops and large tablets) */
 @media (max-width: 1400px) {
   html {
     font-size: 17px;
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 990px) {
   html {
     font-size: 16px;
   }
@@ -248,7 +259,6 @@ html {
   }
 }
 
-/* Small tablets and large phones */
 @media (max-width: 700px) {
   html {
     font-size: 15px;
@@ -263,7 +273,6 @@ html {
   }
 }
 
-/* Small phones */
 @media (max-width: 500px) {
   html {
     font-size: 14px;
