@@ -220,32 +220,33 @@ body {
 
 
 /*-----RESPONSIVNESS BREAKPOINTS*/
-@media (max-width: 2000px) {
-    html {
-        font-size: 18px;
-    }
+html {
+  font-size: 18px;
 }
 
+/* Medium screens (desktops and large tablets) */
 @media (max-width: 1400px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 1000px) {
-    html {
-        font-size: 12px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
 
+/* Small tablets and large phones */
 @media (max-width: 700px) {
-    html {
-        font-size: 8px;
-    }
+  html {
+    font-size: 15px;
+  }
 }
 
+/* Small phones */
 @media (max-width: 500px) {
-    html {
-        font-size: 5px;
-    }
+  html {
+    font-size: 14px;
+  }
 }
